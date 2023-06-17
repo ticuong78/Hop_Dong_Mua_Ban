@@ -1,0 +1,212 @@
+*{
+    font-family: Roboto;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: greenyellow;
+}
+
+.dong_nai{
+    height: 100px;
+}
+
+.cong_hoa{
+    font-size: 16px;
+}
+
+.bang_hop_dong{
+    overflow-y: auto;
+    inset: 15% 15%;
+    padding: 25px;
+    box-sizing: border-box;
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+}
+
+.bang_hop_dong::before{
+    top: 50%;
+    left: 50%;
+    opacity: 0.3;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    content: url('https://upload.wikimedia.org/wikipedia/vi/d/db/Logo_Dong_Nai.svg');
+}
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mo_dau{
+    display: flex;
+    width: 330px;
+    flex-direction: column;
+}
+
+.doc_lap{
+    display: flex;
+    font-size: 15px;
+    justify-content: center;
+    color: RGB(100 100 100);
+}
+
+.em_height{
+    height: 1em;
+}
+
+.fit_content_width{
+    width: fit-content;
+}
+
+.ngay{
+    width: 330px;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.ten_hop_dong{
+    font-size: 20px;
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.vung_con_lai{
+    padding: 0 25px;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+}
+
+.display_block{
+    display: block;
+}
+
+.input_ten{
+    padding: 5px 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background-color: unset;
+}
+
+table{
+    border-collapse: collapse;
+    position: relative;
+    width: 100%;
+}
+
+thead{
+    color: white;
+    background-color: rgb(101,103,115);
+}
+
+td {
+    padding: 10px;
+}
+
+td:nth-child(2),
+td:nth-child(3){
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+th{
+    padding: 10px;
+}
+
+td{
+    font-size: 15px;
+}
+
+.table_container{
+    display: inline-block;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.noi_dung{
+    margin-top: 20px;
+}
+
+.ky_ten_section{
+    margin-top: 50px;
+    display: flex;
+    padding: 0 150px;
+    justify-content: space-between;
+}
+
+.date{
+    width: 110px;
+    color: grey;
+    cursor: pointer;
+}
+
+.date::placeholder{
+    text-align: center;
+}
+
+.chu_ky{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.ky_ten{
+    padding: 5px;
+    border-radius: 5px;
+    border: unset;
+    font-weight: bold;
+    font-size: 13.5px;
+    background-color: rgb(59, 206, 255);
+    margin-top: 20px;
+    box-sizing: border-box;
+    align-self: center;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.ky_ten:hover{
+    background-color: rgb(121, 221, 255);
+}
+
+.ky_ten:active{
+    background-color: rgb(49, 175, 218);
+}
+
+.da_ky{
+    display: none;
+    background-color: rgb(0, 255, 0);
+    position: absolute;
+    width: fit-content;
+    padding: 10px;
+    font-size: 17px;
+    height: fit-content;
+    font-weight: bold;
+    pointer-events: none;
+    inset: 38px;
+    left: 32px;
+    white-space: nowrap;
+}
+
+.ky_ten1:focus ~ .da_ky1,
+.ky_ten2:focus ~ .da_ky2{
+    display: block;
+}
